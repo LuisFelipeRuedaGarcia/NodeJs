@@ -16,22 +16,12 @@ const server = http.createServer((req, res)=>{
     /* procces.exit(); */
 
 //routing
-if(url ==="/"){
-    res.setHeader('Content-Type','text/html');
-    res.write('<html>');
-    res.write('<head> <title>My first response page</title> </head>');
-    res.write('<Body><form action="/message" method="Post"> <input type="text" name="message"><button type="submit" >Send</button></form> </Body>');
-    res.write('<html>');
-    res.write('</html>');
-    return res.end();
-}
 
     //enviando respuestas
     res.setHeader('Content-Type','text/html');
     res.write('<html>');
     res.write('<head> <title>My first response page</title> </head>');
     res.write('<Body> <h1>Hello FROM NODE JS dudeeeee</h1> </Body>');
-    res.write('<html>');
     res.write('</html>');
     res.end();
 });
